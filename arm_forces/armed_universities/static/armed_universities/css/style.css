@@ -1,0 +1,15 @@
+
+
+.header__container {
+    max-width: 1080px;
+}
+.main__container {
+    max-width: 1080px;
+}
+.footer__container {
+    max-width: 1080px;
+}
+
+body {
+    background-color: darkkhaki;
+}

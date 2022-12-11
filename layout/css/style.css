@@ -1,0 +1,172 @@
+
+body, html {
+    height: 100%;
+}
+body {
+    background: url("../img/arm_background.jfif");
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #fff;
+    font-size: 22px;
+
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column
+}
+
+main {
+    flex: 1 1 auto;
+}
+/* ----------------- */
+
+.header__container,
+.main__container,
+.footer__container {
+    max-width: 1280px;
+    background-color: #427430;
+    margin: 0 auto;
+}
+
+/* ------------ */
+
+.header__logo {
+    display: inline-block;    
+}
+.logo {
+
+}
+.logo__icon {
+    height: 30px;
+    width: 70px;
+}
+
+.header__menu {
+    /* display: inline-block;
+    width: 90%; */
+    padding: 25px 70px 100px 70px;
+}
+.menu {
+
+}
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+}
+.menu__link {
+    color: white;
+    text-decoration: none;
+    transition: all .1s ease;
+}
+.menu__link:hover {
+    text-decoration: underline;
+}
+.menu__link:visited {
+    text-decoration: overline;
+}
+.menu__link:active {
+    color: rgb(255, 255, 0);
+}
+
+/* ------------ */
+
+.main__about {
+    padding: 0 70px;
+}
+.about {
+    min-height: 900px;
+
+}
+.about__body {
+    font-weight: 200;
+    font-size: 20px;
+    word-spacing: normal;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+}
+.about__title {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0 0 50px 0;
+}
+
+/* ------------------- */
+
+.content {
+    min-height: 900px;
+}
+.content__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 75px;
+}
+.content__title::after {
+    content: '';
+    position: absolute;
+    width: 1280px;
+    left: 0;
+    bottom: -55px;
+    height: 25px;
+    background-color: gold;
+}
+
+/* schools list */
+
+.content {}
+
+.menu__list {}
+
+.content__title {}
+
+.content__main {
+    padding: 0 21px;
+}
+
+.menu__link {}
+
+.content__list {}
+
+.armed-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__item {}
+
+.meny__item {}
+
+.armed-list__item {
+    padding: 20px 0 20px 0;
+    border-bottom: 10px solid silver;
+    display: flex;
+}
+
+.armed-list__picture img {      
+    width: 596px;
+    height: 399px;
+}
+
+.armed-list__info {
+    padding: 0 50px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info__name {
+
+}
+
+.info__description {}
+
+.info__button-wrapper {}
+
+.info__geo {}
+
+.info__button {}
