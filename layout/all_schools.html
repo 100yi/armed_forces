@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Armed forces schools</title>
+    <title>Военные вузы</title>
 </head>
 
 <body>
@@ -44,32 +44,19 @@
                     <div class="content__title">Все заведения</div>
                     <div class="content__main">
                         <ul class="content__list armed-list">
-                            <li class="armed-list__item">
-                                <div class="armed-list__picture">
-                                    <img src="img/Военная академия Генерального штаба/main.jpg" alt="armed_school">
-                                </div>
-                                <div class="armed-list__info info">
-                                    <div class="info__name">Наименование: Военная академия Генерального штаба</div>
-                                    <div class="info__description">Военная ордена Ленина, Краснознамённая, орденов Суворова и Кутузова академия Генерального штаба Вооружённых сил
-                                    Российской Федерации — высшее военно-учебное заведение для обучения, подготовки и повышения квалификации высших и
-                                    старших офицеров Вооружённых сил, других министерств и ведомств Российской Федерации, руководителей и должно...</div>
-                                    <div class="info__button-wrapper"><a href="#" class="info__button">Читать далее...</a></div>
-                                    <div class="info__geo">Место нахождения: Москва, Улица Гринева</div>
-                                </div>
-                            </li>
-                            <li class="armed-list__item">
-                                <div class="armed-list__picture">
-                                    <img src="img/Военно-дипломатическая академия/main.jpg" alt="armed_school">
-                                </div>
-                                <div class="armed-list__info info">
-                                    <div class="info__name">Наименование: Военная академия Генерального штаба</div>
-                                    <div class="info__description">Военная ордена Ленина, Краснознамённая, орденов Суворова и Кутузова академия Генерального штаба Вооружённых сил
-                                    Российской Федерации — высшее военно-учебное заведение для обучения, подготовки и повышения квалификации высших и
-                                    старших офицеров Вооружённых сил, других министерств и ведомств Российской Федерации, руководителей и должно...</div>
-                                    <div class="info__button-wrapper"><a href="#" class="info__button">Читать далее...</a></div>
-                                    <div class="info__geo">Место нахождения: Москва, Улица Гринева</div>
-                                </div>
-                            </li>
+                            {% for post in posts %}
+                                <li class="armed-list__item">
+                                    <div class="armed-list__picture">
+                                        <img src="img/Военная академия Генерального штаба/main.jpg" alt="armed_school">
+                                    </div>
+                                    <div class="armed-list__info info">
+                                        <div class="info__name">Наименование: {{ p.name }}</div>
+                                        <div class="info__description">{{ p.full_info }}</div>
+                                        <div class="info__button-wrapper"><a href="#" class="info__button">Читать далее...</a></div>
+                                        <div class="info__geo">Место нахождения: {{ p.location }}</div>
+                                    </div>
+                                </li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
@@ -77,9 +64,42 @@
         </main>
         <footer class="footer">
             <div class="footer__container">
+                <ul class="armed-list">
+                    <li class="armed-list__item">
+                        <div class="armed-list__picture">
+                            <img src="img/Военная академия Генерального штаба/main.jpg" alt="armed_school">
+                        </div>
+                        <div class="armed-list__info info">
+                            <div class="info__name">Наименование: Военная академия Генерального штаба</div>
+                            <div class="info__description">Военная ордена Ленина, Краснознамённая, орденов Суворова и Кутузова академия
+                                Генерального штаба Вооружённых сил
+                                Российской Федерации — высшее военно-учебное заведение для обучения, подготовки и повышения квалификации
+                                высших и
+                                старших офицеров Вооружённых сил, других министерств и ведомств Российской Федерации, руководителей и
+                                должно...</div>
+                            <div class="info__button-wrapper"><a href="#" class="info__button">Читать далее...</a></div>
+                            <div class="info__geo">Место нахождения: Москва, Улица Гринева</div>
+                        </div>
+                    </li>
+                    <li class="armed-list__item">
+                        <div class="armed-list__picture">
+                            <img src="img/Военно-дипломатическая академия/main.jpg" alt="armed_school">
+                        </div>
+                        <div class="armed-list__info info">
+                            <div class="info__name">Наименование: Военная академия Генерального штаба</div>
+                            <div class="info__description">Военная ордена Ленина, Краснознамённая, орденов Суворова и Кутузова академия
+                                Генерального штаба Вооружённых сил
+                                Российской Федерации — высшее военно-учебное заведение для обучения, подготовки и повышения квалификации
+                                высших и
+                                старших офицеров Вооружённых сил, других министерств и ведомств Российской Федерации, руководителей и
+                                должно...</div>
+                            <div class="info__button-wrapper"><a href="#" class="info__button">Читать далее...</a></div>
+                            <div class="info__geo">Место нахождения: Москва, Улица Гринева</div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </footer>
     </div>
 </body>
-
 </html>
