@@ -1,0 +1,136 @@
+.container__header,
+.container__main,
+.container__footer {
+    margin: 0 auto;
+    max-width: 1020px;
+}
+.container__header {
+    margin-top: 30px;
+}
+.container__main {
+    margin-top: 100px;
+}
+.container__footer {
+    padding-bottom: 25px;
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+    background: #282828;
+    color: rgb(143, 104, 242);
+    font-size: 24px;
+    font-family: Arial;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main {
+    flex: 1 1 auto;
+    padding: 50px;
+    
+}
+
+.gen_pas_form label {
+    margin-right: 15px;
+}
+
+
+/* lists */
+
+.menu_list {
+    min-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    color:rgb(118, 204, 204);
+    text-decoration: none;
+}
+
+.menu_list li a {
+    text-decoration: none;
+    color: rgb(98, 197, 197);
+    transition: background-color .3s ease-out;
+    padding: 11px;
+}
+.menu_list li a:hover {
+    color: black;
+    padding: 10px;
+    border: 1px solid aqua;
+    background-color: rgb(221, 234, 245);
+}
+
+/* buttons */
+
+.submit {
+    display: block;
+    margin: 0 auto;
+    height: 45px;
+    width: 100px;
+    border-radius: 15px;
+    transition: all .3s ease-out;
+}
+.submit:hover {
+    background-color: rgb(143, 104, 242);
+}
+
+.input_text {
+    text-align: center;
+    min-height: 33px;
+    min-width: 150px;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+
+/* colours */
+span {
+    padding: 3px;
+    margin-left: 1px;
+    color: black
+}
+.yellow {
+    background-color: yellow;
+}
+.green  {
+    background-color: green;
+}
+.crimson {
+    background-color: crimson;
+}
+.azure {
+    background-color: azure;
+}
+.brown {
+    background-color: brown;
+}
+.pink {
+    background-color: pink;
+}
+.blueviolet {
+    background-color: blueviolet;
+}
+.orange {
+    background-color: orange;
+}
+.tomato {
+    background-color: tomato;
+}
+.violet {
+    background-color: violet;
+}
+.orchid {
+    background-color: orchid;
+}
+
+/* TNX */
+.tnx {
+    margin-top: 157px;
+    font-size: 50px;
+    color: rgba(192, 192, 192, 0.134);
+}

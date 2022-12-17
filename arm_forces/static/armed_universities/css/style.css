@@ -1,0 +1,256 @@
+body,
+html {
+    height: 100%;
+}
+
+body {
+    background: #2f2f2f;
+    background-image: url("../img/snowflakes.png");
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #fff;
+    font-size: 22px;
+
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+/* ----------------- */
+
+.header__container,
+.main__container,
+.footer__container {
+    max-width: 1280px;
+    background-color: #75946d;
+    margin: 0 auto;
+    border-left: #fff 1px dashed;
+    border-right: #fff 1px dashed;
+}
+
+/* ------------ */
+
+.header__logo {
+    display: inline-block;
+}
+
+.logo {}
+
+.logo__icon {
+    height: 30px;
+    width: 70px;
+}
+
+.header__menu {
+    /* display: inline-block;
+    width: 90%; */
+    padding: 30px 70px 100px 70px;
+}
+
+.menu {}
+
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__link {
+    color: white;
+    text-decoration: none;
+    transition: all .1s ease;
+}
+.menu__link li {
+    font-weight: 500;
+    font-size: 30px;
+    word-spacing: 2.5px;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+
+.menu__link:visited {
+    text-decoration: overline;
+}
+
+.menu__link:active {
+    color: rgb(255, 255, 0);
+}
+
+/* ------------ */
+
+.main__about {
+    padding: 0 70px;
+}
+
+.about {
+    min-height: 900px;
+
+}
+
+.about__body {
+    font-weight: 200;
+    font-size: 20px;
+    word-spacing: normal;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+}
+
+.about__title {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0 0 50px 0;
+}
+
+/* ------------------- */
+
+.content {
+    min-height: 900px;
+}
+
+.content__title {
+    text-align: center;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 75px;
+}
+
+.content__title::after {
+    content: '';
+    position: absolute;
+    width: 1280px;
+    left: 0;
+    bottom: -55px;
+    height: 25px;
+    background-color: rgb(255, 247, 25);
+    box-shadow: 15px 15px 30px rgb(255, 247, 25);
+}
+.content__title:hover::after {
+    
+}
+
+/* schools list */
+
+.content {}
+
+.menu__list {}
+
+.content__title {}
+
+.content__main {
+    padding: 0 21px;
+}
+
+.menu__link {}
+
+.content__list {}
+
+.armed-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__item {}
+
+.meny__item {}
+
+.armed-list__item {
+    font-family: 'Mulish', sans-serif;
+    font-size: 300;
+    padding: 20px 0 20px 0;
+    border-bottom: 10px solid silver;
+    display: flex;
+}
+
+.armed-list__picture img {
+    width: 596px;
+    height: 399px;
+}
+
+.armed-list__info {
+    padding: 0 50px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.info__name {
+    margin: 0 0 20px 0;
+}
+
+.info__description {
+    margin: 0 0 30px 0;
+}
+
+.info__geo {}
+
+.info__button-wrapper {
+    text-align: right;
+    margin: 0 0 30px 0;
+}
+
+.info__button {
+    background-color: #d7d5d5;
+    border-radius: 15px;
+    padding: 9px;
+    text-decoration: none;
+    color: indigo;
+}
+
+.info__button:hover {
+    background-color: #e4e0e0;
+    box-shadow: 0 0 15px rgb(153, 243, 174);
+    color: rgb(42, 235, 235);
+}
+
+.content__school {
+    padding: 0 50px 0 50px;
+}
+.school {
+    font-family: 'Mulish', sans-serif;
+}
+
+.school__picture {
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+.school__picture img {
+    display: inline-block;
+    height: 700px;
+    width: 960px;
+}
+
+.school__location {
+    margin: 0 0 30px 0;
+    font-style: italic;
+}
+
+.school__title-1 {
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0 0 10px 30px;
+}
+
+.school__full-info {
+    margin: 0 0 30px 0;
+}
+
+.school__website-info {}
+
+.website-info {}
+
+.website-info__contacts {}
+
+.website-info__website {}

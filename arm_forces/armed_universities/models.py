@@ -14,6 +14,8 @@ class Armed_university(models.Model):
     time_create = models.DateTimeField(auto_now_add=True, verbose_name="Время создания")
     time_update = models.DateTimeField(auto_now=True, verbose_name="Время изменения")
     is_published = models.BooleanField(blank=True)
+    contacts = models.CharField(verbose_name='Контакты', max_length=200)
+    website = models.CharField(verbose_name='Сайт', max_length=50)
     slug = models.SlugField(max_length=255, unique=True, blank=True, db_index=True, verbose_name="URL")
 
     def get_absolute_url(self):
